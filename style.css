@@ -102,15 +102,18 @@ footer a {
 
 .search-and-friends {
   order: 2;
+  margin-top: 25px;
 }
 
 .search {
   display: flex;
+  height: 48px;
   align-items: center;
   justify-content: center;
   border-radius: 60px;
   border: solid thin #e4e4e4;
   width: fit-content;
+  
 }
 
 .search input {
@@ -118,24 +121,37 @@ footer a {
   padding: 10px;
   font-size: 18px;
   /* color: transparent; */
-  
+  border: none;
   margin: 20px;
 
 }
 
 .search input:focus {
-  box-shadow: 5px 5px 5px #5f6368;
   outline: none;
-  outline: -webkit-focus-ring-color auto 1px;
+  /* outline: -webkit-focus-ring-color auto 1px;
     outline-color: -webkit-focus-ring-color;
     outline-style: auto;
-    outline-width: 1px;
+    outline-width: 1px; */
 }
 
 .search-buttons {
+  margin-top: 20px;
   display: flex;
   justify-content: center;
+  padding-top: 10px;
 }
+
+.inner-search-buttons input {
+  padding: 15px;
+  border: none;
+  margin: 0 5px;
+  color: #5f6368;
+  border-radius: 5px;
+}
+
+/* .inner-search-buttons input:mouseover {
+  border: 1px #5f6368;
+} */
 
 .footer-left {
   justify-content: inherit;
@@ -196,18 +212,51 @@ footer a {
   color: #fff;
 }
 
+.sign-in-button:link {
+  text-decoration: none;
+  color: #fff;
+}
+
 .icon-inline {
   display: block;
   height: 100%;
   width: 100%;
   color: #9AA0A6;
-  height: 20px;
-  width: 20px;
-  margin-top: 3px;
+  /* height: 20px;
+  width: 20px; */
+  padding: 10px;
+  /* margin-top: 3px; */
   display: inline-block;
   fill: currentColor;
-  height: 24px;
+  height: 28px;
   line-height: 24px;
   position: relative;
   width: 24px;
+  /* border: solid thick red; */
+  margin-left: 10px;
+}
+
+
+
+.microphone-inline {
+  background: url(https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png) 0 0 no-repeat;
+    height:36px;
+    width: 36px;
+    background-size: 36px;
+    vertical-align: center;
+    padding: 14px;
+    /* margin-top: 2000px; */
+}
+
+.microphone-container {
+  margin-right: 10px;
+}
+
+.shadow {
+  box-shadow: 3px 3px 3px #5f6368;
+}
+
+.border {
+  border: 2px solid  #414447;
+  color: #000;
 }

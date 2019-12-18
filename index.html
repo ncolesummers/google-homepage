@@ -47,15 +47,21 @@
       <div class="search">
         <div class="icon-containter">
           <span class="icon-inline">
-            <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
+            <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
           </span>
         </div>
-        <input type="text" aria-label="search"
+        <input type="text" class="search-field" aria-label="search"
         maxlength="2048">
+        <div class="microphone-container">
+          <span class="microphone-inline">
+          </span>
+        </div>
       </div>
       <div class="search-buttons">
-        <input value="Google Search" type="submit">
-        <input value="I'm Feeling Lucky" type="submit">
+        <div class="inner-search-buttons">
+          <input value="Google Search" class="search-button" type="submit">
+          <input value="I'm Feeling Lucky" class="search-button" type="submit">
+        </div>
       </div>
     </div>
 
@@ -77,5 +83,22 @@
     </footer>
 
   </div>
+
+  <script>
+  const grabSearch = document.querySelector('.search');
+  const searchField = document.querySelector('.search-field'); 
+
+  function handleShadow(e) {
+    if (e.target == grabSearch || e. target == searchField) {
+      grabSearch.classList.add('shadow');
+    } else {
+      grabSearch.classList.remove('shadow');
+    }
+  }
+
+  window.addEventListener('click', handleShadow);
+  window.addEventListener('mouseover', handleShadow);
+
+  </script>
 </body>
 </html>
