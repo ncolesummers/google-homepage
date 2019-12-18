@@ -1,0 +1,153 @@
+root {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background: #fff;
+  color: #222;
+  font-size: small;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  list-style: none;
+  position: fixed;
+  top: 25px;
+}
+
+li {
+  display: inline;
+  margin: 10px;
+}
+
+a:link {
+  text-decoration: none;
+  color: #5f6368;
+  font-size: 22px;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #5f6368;
+}
+
+a:hover {
+  text-decoration-line: underline;
+}
+
+
+
+header {
+  justify-content: space-between;
+  display: flex;
+}
+
+header a {
+  padding: 4px;
+  margin-top: 10px;
+}
+
+footer {
+  justify-content: space-between;
+  display: flex;
+  background-color: #F2F2F2;
+  line-height: 40px;
+  width: 100vw;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  height: 52px;
+  border-top: 1px solid #e4e4e4;
+}
+
+footer a {
+  padding: 4px;
+}
+
+.header-left {
+  left: 0;
+  
+}
+
+.header-right {
+  right: 0;
+}
+
+.center-page {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.spacer {
+  order: 0;
+  height: 33vh;
+  display: block;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  order: 1;
+}
+
+.search-and-friends {
+  order: 2;
+}
+
+.search {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  border-radius: 60px;
+  border: solid thin #e4e4e4;
+  width: fit-content;
+}
+
+.search input {
+  width: 500px;
+  padding: 10px;
+  font-size: 18px;
+  /* color: transparent; */
+  
+  margin: 20px;
+
+}
+
+.search input:focus {
+  box-shadow: 5px 5px 5px #5f6368;
+  outline: none;
+  outline: -webkit-focus-ring-color auto 1px;
+    outline-color: -webkit-focus-ring-color;
+    outline-style: auto;
+    outline-width: 1px;
+}
+
+.search-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-left {
+  justify-content: inherit;
+  align-items: stretch;
+  margin-left: 30px;
+  white-space: nowrap;
+
+}
+
+.footer-right {
+  margin-right: 30px;
+  float: right;
+  white-space: nowrap;
+
+}
